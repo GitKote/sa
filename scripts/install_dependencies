@@ -1,4 +1,4 @@
 #!/bin/bash
 #yum install -y httpd
-
-rm -rf /var/www/html
+cd /opt/apache-tomcat-8.5.53/webapps/
+aws s3 sync . s3://codepipeline-ap-northeast-1-119103992338/buildlatest/target/*
