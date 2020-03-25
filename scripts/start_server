@@ -32,5 +32,4 @@
 echo "hai"
 sudo yum install -y tomcat
 cd /opt/apache-tomcat-8.5.53/webapps/
-#aws s3 sync . s3://codepipeline-ap-northeast-1-119103992338/buildlatest/target/*
-
+aws s3 cp s3://codepipeline-ap-northeast-1-119103992338/buildlatest/target/DemoPipelineJava-0.0.1-SNAPSHOT.war .
