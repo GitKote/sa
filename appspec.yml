@@ -1,8 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: index.html
-    destination: /var/www/html/
+  - source: cluster_create.yml
+    destination: /opt/codedeploy-agent/
+  - source: deploy.yml
+    destination: /opt/codedeploy-agent/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
